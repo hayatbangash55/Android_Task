@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/actionButtonStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cartIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:contentDescription="bell"
+        android:gravity="center"
+        android:src="@drawable/ic_cart" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/notification_badge"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cartIcon"
+        android:layout_alignRight="@id/cartIcon"
+        android:layout_gravity="right|end|top"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/badge_background"
+        android:gravity="center"
+        android:minWidth="17sp"
+        android:padding="3dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="1dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>
